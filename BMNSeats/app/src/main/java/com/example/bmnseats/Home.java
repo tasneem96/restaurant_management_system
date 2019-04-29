@@ -1,5 +1,6 @@
 package com.example.bmnseats;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -33,6 +34,8 @@ public class Home extends AppCompatActivity {
 
                 String value = ItemNames[position];
                 Toast.makeText(Home.this, value, Toast.LENGTH_SHORT).show();
+                Intent Intent_One= new Intent(Home.this,FoodDetails.class);
+                startActivity(Intent_One);
             }
         });
 

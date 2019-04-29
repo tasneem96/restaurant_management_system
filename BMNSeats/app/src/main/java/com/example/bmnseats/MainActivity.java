@@ -19,14 +19,8 @@ Intent Intent_Intent;
         Signin_Button=(Button)findViewById(R.id.signIn);
         Signup_Button=(Button)findViewById(R.id.signUp);
         Slogan_Textview=(TextView)findViewById(R.id.txtSlogan);
-        Button b1=findViewById(R.id.deliveryButton);
-        b1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent in=new Intent(MainActivity.this,Homedelivery.class);
-                startActivity(in);
-            }
-        });
+
+
 
         Typeface Type_Face=Typeface.createFromAsset(getAssets(),"fonts/hetilica.ttf");
         Slogan_Textview.setTypeface(Type_Face);
