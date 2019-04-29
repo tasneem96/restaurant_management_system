@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">BMNSeats</string>
     <string name="title_activity_home">Home</string>
-    <string-array name="Food_Name">
+    <string-array name="item_Names">
 
         <item>Finger Food</item>
         <item>Burger</item>
