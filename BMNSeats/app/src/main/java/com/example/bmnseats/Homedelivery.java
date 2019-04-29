@@ -1,5 +1,6 @@
 package com.example.bmnseats;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -81,6 +82,13 @@ public class Homedelivery extends AppCompatActivity {
             Edit_Rcv_Two=EditText_Two.getText().toString().trim();
 
             Button_One.setEnabled(!Edit_Rcv_Two.isEmpty() && !Edit_Rcv_Two.isEmpty() && Edit_Rcv_Two.equalsIgnoreCase("Dhaka"));
+            Button_One.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent Intent_Payment=new Intent(Homedelivery.this,payment.class);
+                    startActivity(Intent_Payment);
+                }
+            });
         }
 
         @Override

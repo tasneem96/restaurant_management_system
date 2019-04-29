@@ -14,7 +14,11 @@
         <item>Vegetables</item>
         <item>Juice</item>
         <item>Soft Drinksl</item>
+    </string-array>
 
-
+    <string-array name="payment_method">
+        <item>Cash</item>
+        <item>Debit or Credit Card</item>
+        <item>Mobile Banking</item>
     </string-array>
 </resources>
