@@ -16,6 +16,7 @@
         android:textSize="20dp"/>
 
     <EditText
+        android:id="@+id/acHolderName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter A/C Holder's name"
@@ -33,7 +34,7 @@
 
     <EditText
         android:textColorHint="@color/white1"
-        android:id="@+id/acHolderName"
+        android:id="@+id/cardNo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter Card number"

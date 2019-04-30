@@ -12,34 +12,34 @@ import android.widget.Toast;
 
 public class Home extends AppCompatActivity {
 
-    private ListView search_Items;
+    private ListView Search_Items;
     ArrayAdapter<String> adapter;
-    private SearchView searchView_Id;
+    private SearchView Searchview_Id;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        search_Items= (ListView)findViewById(R.id.search_Items);
+        Search_Items= (ListView)findViewById(R.id.searchItems);
 
-        searchView_Id = (SearchView) findViewById(R.id.searchview_Id);
-        final String[] ItemNames= getResources().getStringArray(R.array.item_Names);
+        Searchview_Id = (SearchView) findViewById(R.id.searchviewId);
+        final String[] Item_Names= getResources().getStringArray(R.array.itemNames);
 
-        adapter= new ArrayAdapter<String>(Home.this, R.layout.sample_layout1, R.id.Textview_Id, ItemNames ) ;
+        adapter= new ArrayAdapter<String>(Home.this, R.layout.sample_layout1, R.id.Textview_Id, Item_Names ) ;
 
-        search_Items.setAdapter(adapter);
+        Search_Items.setAdapter(adapter);
 
-        search_Items.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        Search_Items.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                String value = ItemNames[position];
+                String value = Item_Names[position];
                 Toast.makeText(Home.this, value, Toast.LENGTH_SHORT).show();
                 Intent Intent_One= new Intent(Home.this,FoodDetails.class);
                 startActivity(Intent_One);
             }
         });
 
-        searchView_Id.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+        Searchview_Id.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
                 return false;
