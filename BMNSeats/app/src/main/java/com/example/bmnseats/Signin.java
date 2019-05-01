@@ -58,7 +58,7 @@ public class Signin extends AppCompatActivity  {
                             if (User_database.getPassword().equals(Password_Edittext.getText().toString()) && User_database.getEmail().equals(Email_Edittext.getText().toString()))
                             {
                                 Toast.makeText(Signin.this, "Sign In Successfully", Toast.LENGTH_SHORT).show();
-                                Intent Home_Intent=new Intent(Signin.this,Home.class);
+                                Intent Home_Intent=new Intent(Signin.this,HomePage.class);
                                 startActivity(Home_Intent);
                             }
                             else

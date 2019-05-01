@@ -53,7 +53,7 @@ public class Signup extends AppCompatActivity {
                         {
                             Dialog_Progress.dismiss();
                             Toast.makeText(Signup.this,"Phone Number is already registered",Toast.LENGTH_SHORT).show();
-                            Intent Home_Intent=new Intent(Signup.this,Home.class);
+                            Intent Home_Intent=new Intent(Signup.this,HomePage.class);
                             startActivity(Home_Intent);
                         }
                         else
