@@ -2,9 +2,9 @@ package com.example.bmnseats;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -40,7 +40,7 @@ public class Home extends AppCompatActivity {
 
                 String value = Item_Names[position];
                 Toast.makeText(Home.this, value, Toast.LENGTH_SHORT).show();
-                Intent Intent_One= new Intent(Home.this,FoodDetails.class);
+                Intent Intent_One= new Intent(Home.this, FoodDetails.class);
                 startActivity(Intent_One);
             }
         });
@@ -70,26 +70,26 @@ public class Home extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        if(item.getItemId()==R.id.searchItems)
+        if(item.getItemId()== R.id.searchItems)
         {
-            Intent Intent_Searchitem=new Intent(Home.this,Home.class);
+            Intent Intent_Searchitem=new Intent(Home.this, Home.class);
             startActivity(Intent_Searchitem);
             return true;
         }
-        if (item.getItemId()==R.id.seeTopuser)
+        if (item.getItemId()== R.id.seeTopuser)
         {
             Intent Intent_Seetopuser=new Intent(Home.this,Topuser.class);
             startActivity(Intent_Seetopuser);
             return true;
         }
-        if(item.getItemId()==R.id.aboutUs)
+        if(item.getItemId()== R.id.aboutUs)
         {
-            Intent Intent_Aboutus=new Intent(Home.this,Aboutus.class);
+            Intent Intent_Aboutus=new Intent(Home.this, Aboutus.class);
             startActivity(Intent_Aboutus);
             return true;
         }
 
-        if(item.getItemId()==R.id.singOut)
+        if(item.getItemId()== R.id.singOut)
         {
             alertDialogBuilder=new AlertDialog.Builder(Home.this);
             alertDialogBuilder.setTitle(R.string.title);
@@ -100,7 +100,7 @@ public class Home extends AppCompatActivity {
             alertDialogBuilder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialogInterface, int i) {
-                    Intent Intent_Signout=new Intent(Home.this,MainActivity.class);
+                    Intent Intent_Signout=new Intent(Home.this, MainActivity.class);
                     startActivity(Intent_Signout);
                     finish();
 

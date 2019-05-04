@@ -2,9 +2,9 @@ package com.example.bmnseats;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -30,16 +30,16 @@ public class payment extends AppCompatActivity {
             public void onClick(View v) {
                 int selectedId=Radio_Group.getCheckedRadioButtonId();
 
-                if(v.getId()==R.id.confirmButton  )
+                if(v.getId()== R.id.confirmButton  )
                 {
-                    if(selectedId==R.id.debitCreditRadioButton)
+                    if(selectedId== R.id.debitCreditRadioButton)
                     {
-                        Intent Intent_DebitCredit=new Intent(payment.this,DebitCredit.class);
+                        Intent Intent_DebitCredit=new Intent(payment.this, DebitCredit.class);
                         startActivity(Intent_DebitCredit);
                     }
-                    else if(selectedId==R.id.mobileBankingRadioButton)
+                    else if(selectedId== R.id.mobileBankingRadioButton)
                     {
-                        Intent Intent_Mobilebanking=new Intent(payment.this,MobileBanking.class);
+                        Intent Intent_Mobilebanking=new Intent(payment.this, MobileBanking.class);
                         startActivity(Intent_Mobilebanking);
                     }
                 }
@@ -61,26 +61,26 @@ public class payment extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        if(item.getItemId()==R.id.searchItems)
+        if(item.getItemId()== R.id.searchItems)
         {
-            Intent Intent_Searchitem=new Intent(payment.this,Home.class);
+            Intent Intent_Searchitem=new Intent(payment.this, Home.class);
             startActivity(Intent_Searchitem);
             return true;
         }
-        if (item.getItemId()==R.id.seeTopuser)
+        if (item.getItemId()== R.id.seeTopuser)
         {
             Intent Intent_Seetopuser=new Intent(payment.this,Topuser.class);
             startActivity(Intent_Seetopuser);
             return true;
         }
-        if(item.getItemId()==R.id.aboutUs)
+        if(item.getItemId()== R.id.aboutUs)
         {
-            Intent Intent_Aboutus=new Intent(payment.this,Aboutus.class);
+            Intent Intent_Aboutus=new Intent(payment.this, Aboutus.class);
             startActivity(Intent_Aboutus);
             return true;
         }
 
-        if(item.getItemId()==R.id.singOut)
+        if(item.getItemId()== R.id.singOut)
         {
             alertDialogBuilder=new AlertDialog.Builder(payment.this);
             alertDialogBuilder.setTitle(R.string.title);
@@ -91,7 +91,7 @@ public class payment extends AppCompatActivity {
             alertDialogBuilder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialogInterface, int i) {
-                    Intent Intent_Signout=new Intent(payment.this,MainActivity.class);
+                    Intent Intent_Signout=new Intent(payment.this, MainActivity.class);
                     startActivity(Intent_Signout);
                     finish();
 

@@ -10,7 +10,7 @@ public class user {
    {
 
    }
-    public user( String Fname_Constructor,String Lname_Constructor,String Email_Constructor, String Password_Constructor)
+    public user(String Fname_Constructor, String Lname_Constructor, String Email_Constructor, String Password_Constructor)
     {
         Email=Email_Constructor;
         password=Password_Constructor;
