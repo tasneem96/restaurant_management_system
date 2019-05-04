@@ -9,12 +9,13 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-public class MobileBanking extends AppCompatActivity {
-private AlertDialog.Builder alertDialogBuilder;
+public class Aboutus extends AppCompatActivity {
+
+    private AlertDialog.Builder alertDialogBuilder;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mobile_banking);
+        setContentView(R.layout.activity_aboutus);
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -29,26 +30,26 @@ private AlertDialog.Builder alertDialogBuilder;
 
         if(item.getItemId()==R.id.searchItems)
         {
-            Intent Intent_Searchitem=new Intent(MobileBanking.this,Home.class);
+            Intent Intent_Searchitem=new Intent(Aboutus.this,Home.class);
             startActivity(Intent_Searchitem);
             return true;
         }
         if (item.getItemId()==R.id.seeTopuser)
         {
-            Intent Intent_Seetopuser=new Intent(MobileBanking.this,Topuser.class);
+            Intent Intent_Seetopuser=new Intent(Aboutus.this,Topuser.class);
             startActivity(Intent_Seetopuser);
             return true;
         }
         if(item.getItemId()==R.id.aboutUs)
         {
-            Intent Intent_Aboutus=new Intent(MobileBanking.this,Aboutus.class);
+            Intent Intent_Aboutus=new Intent(Aboutus.this,Aboutus.class);
             startActivity(Intent_Aboutus);
             return true;
         }
 
         if(item.getItemId()==R.id.singOut)
         {
-            alertDialogBuilder=new AlertDialog.Builder(MobileBanking.this);
+            alertDialogBuilder=new AlertDialog.Builder(Aboutus.this);
             alertDialogBuilder.setTitle(R.string.title);
             alertDialogBuilder.setIcon(R.drawable.exit);
             alertDialogBuilder.setMessage(R.string.message);
@@ -57,7 +58,7 @@ private AlertDialog.Builder alertDialogBuilder;
             alertDialogBuilder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialogInterface, int i) {
-                    Intent Intent_Signout=new Intent(MobileBanking.this,MainActivity.class);
+                    Intent Intent_Signout=new Intent(Aboutus.this,MainActivity.class);
                     startActivity(Intent_Signout);
                     finish();
 

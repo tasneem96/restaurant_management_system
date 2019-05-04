@@ -21,4 +21,8 @@
         <item>Debit or Credit Card</item>
         <item>Mobile Banking</item>
     </string-array>
+
+
+    <string name="title">Sign out</string>
+    <string name="message">Do You Want to Exit??</string>
 </resources>

@@ -15,6 +15,13 @@
         app:showAsAction="never"
 
         />
+
+    <item
+        android:id="@+id/seeTopuser"
+        android:title="See Top User"
+        app:showAsAction="never"
+
+        />
     <item
         android:id="@+id/singOut"
         android:title="Sign out"
