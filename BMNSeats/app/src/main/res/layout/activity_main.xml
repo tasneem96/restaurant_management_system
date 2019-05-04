@@ -27,12 +27,7 @@
         android:gravity="center"
         android:textSize="20dp"
         android:textStyle="bold|italic"/>
-    <Button android:id="@+id/deliveryButton"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Delivery"
-
-        />
+   
 
 </LinearLayout>
 
