@@ -25,4 +25,5 @@
 
     <string name="title">Sign out</string>
     <string name="message">Do You Want to Exit??</string>
+    <string name="title_activity_see_direction">Map</string>
 </resources>
