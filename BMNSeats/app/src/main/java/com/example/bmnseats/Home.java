@@ -39,7 +39,7 @@ public class Home extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                 String value = Item_Names[position];
-                Toast.makeText(Home.this, value, Toast.LENGTH_SHORT).show();
+
                 Intent Intent_One= new Intent(Home.this, FoodDetails.class);
                 startActivity(Intent_One);
             }
